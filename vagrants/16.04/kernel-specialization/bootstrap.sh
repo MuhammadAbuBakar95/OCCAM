@@ -38,7 +38,7 @@ echo "success : gllvm installed"
 mkdir Repositories
 # OCCAM
     cd $HOME/Repositories/
-    git clone --recurse-submodules https://github.com/ashish-gehani/OCCAM && \
+    git clone --recurse-submodules https://github.com/MuhammadAbuBakar95/OCCAM && \
     # automatically fixing bug in llpe codebase
     cd OCCAM/src/analysis/llpe/ && \
     perl -pi -e 's/{LIB}/{LIBRARY}/g' utils/Makefile  main/Makefile driver/Makefile && \
