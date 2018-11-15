@@ -38,7 +38,7 @@ echo "success : gllvm installed"
 mkdir Repositories
 # OCCAM
     cd $HOME/Repositories/
-    git clone --recurse-submodules https://github.com/MuhammadAbuBakar95/OCCAM && \
+    git clone --recurse-submodules https://github.com/SRI-CSL/OCCAM && \
     # automatically fixing bug in llpe codebase
     cd OCCAM/src/analysis/llpe/ && \
     perl -pi -e 's/{LIB}/{LIBRARY}/g' utils/Makefile  main/Makefile driver/Makefile && \
@@ -64,7 +64,6 @@ echo "success : musllvm"
     cd $HOME/Repositories/
     git clone https://github.com/SRI-CSL/kernel-specialization
 
-echo "success : The vmlinux file is now present at $HOME/Repositories/kernel-specialization/kernel-to-bitcode/bitcode-build"
-
+echo "Now login to the virtual machine and execute the script generate_kernel_specialized_for_thttpd.sh present at $HOME/Repositories/OCCAM/vagrants/16.04/kernel-specialization/"
 
 
